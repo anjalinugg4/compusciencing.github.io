@@ -1,20 +1,35 @@
-# Using HPC to Run Scripts
+---
+layout: post
+title: "Setting up the HPC Environment"
+tags: ["unrealcv", "unreal engine", "windows"]
+author: "Anjali Nuggehalli"
+include_mathjax: false
+---
+
+## Using HPC to Run Scripts
+
+Follow these steps to set up the HPC Environment and then run commands in the terminal:
 
 1. Request an account on HPC by emailing ITS (servicedesk@pomona.edu) or creating a ticket on their website: https://servicedesk.pomona.edu/support/home. 
 2. Once your account has been granted approval, visit the website here: https://ondemand.hpc.pomona.edu/pun/sys/dashboard. Scroll down to the bottom and select Jupyter Notebook under Interactive Apps. 
 3. Set Pom Partitions to gpu and set the number of GPUs to at least 1 (we used 2 when trying to run the training.py script). Be sure to request a reasonable amount of memory depending on your need (we requested 5G for the training.py script). 
 4. The job may take a second to launch. After it has started, click on the button “Connect to Jupyter”, which will lead you to the website interface for Jupyter Notebook. 
 5. To run a python file, create a new python file in the jupyter notebook and copy the code you wish to run. At the top of the file, copy in: 
+
 ```
 #!/bigdata/rhome/jzzo2022/miniforge3/envs/wandb/bin/python
 ```
+
 (substituting in the correct path to where you’ve installed python on your computer). 
 
-6. Open a new terminal. Type the command: chmod u+x [file name]. This command makes the script executable. Type the command ls -l to double check it has worked. The script’s name should be in green.
+6. Open a new terminal. Type the command: `chmod u+x FILENAME`. This command makes the script executable. Type the command `ls -l` to double check it has worked. The script’s name should be in green.
+
 7. To run the script, you must submit it as a job using slurm. The correct command for this is: 
+
 ```
 srun -n 1 -N 1 --gres=gpu:1 --time 0-01:00:00 [path to file] [any additional arguments] 
 ```
+
 The example script asks for one task and one node. Hypothetically, this number can be increased. However, we ran into some trouble when asking for 4 tasks and 2 nodes. 
 
 
@@ -39,6 +54,7 @@ Note: activate conda environment every time you want to use it
 1. After copy pasting the code into new py file, run chmod command (see above) to make it executable 
 2. Git clone arcs lab ue5osc git repo
 3. Go into sidebar folder and pull everything out of subfolder so computer can navigate to it 
+
 ```
 4. pip install python-osc
 ````
