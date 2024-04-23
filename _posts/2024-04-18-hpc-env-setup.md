@@ -1,9 +1,8 @@
 ---
 layout: post
 title: "Setting up the HPC Environment"
-tags: ["unrealcv", "unreal engine", "windows"]
+tags: ["hpc", "environment", "terminal"]
 author: "Anjali Nuggehalli"
-include_mathjax: false
 ---
 
 ## Using HPC to Run Scripts
