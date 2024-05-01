@@ -51,7 +51,7 @@ Note: activate conda environment every time you want to use it
 2. Git clone arcs lab ue5osc git repo
 3. Go into sidebar folder and pull everything out of subfolder so computer can navigate to it 
 
-```
+```bash
 4. pip install python-osc
 ````
 
