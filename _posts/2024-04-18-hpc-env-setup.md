@@ -41,9 +41,7 @@ For more information about HPC and submitting jobs, see https://pomona-college-h
 1. conda create -n insert name here
 2. conda activate
 3. download and install fastai, torch, wandb
-```
-pip install [name]
-```
+4. `pip install [name]`
 5. Run your script using slurm (see above instructions)
 
 Note: activate conda environment every time you want to use it
