@@ -14,7 +14,7 @@ Follow these steps to set up the HPC Environment and then run commands in the te
 4. The job may take a second to launch. After it has started, click on the button “Connect to Jupyter”, which will lead you to the website interface for Jupyter Notebook. 
 5. To run a python file, create a new python file in the jupyter notebook and copy the code you wish to run. At the top of the file, copy in: 
 
-```
+```bash
 #!/bigdata/rhome/jzzo2022/miniforge3/envs/wandb/bin/python
 ```
 
