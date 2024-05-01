@@ -24,7 +24,7 @@ Follow these steps to set up the HPC Environment and then run commands in the te
 
 7. To run the script, you must submit it as a job using slurm. The correct command for this is: 
 
-```
+```bash
 srun -n 1 -N 1 --gres=gpu:1 --time 0-01:00:00 [path to file] [any additional arguments] 
 ```
 
