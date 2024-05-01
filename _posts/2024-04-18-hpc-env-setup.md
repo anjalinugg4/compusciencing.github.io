@@ -5,7 +5,6 @@ tags: ["hpc", "environment", "terminal"]
 author: "Anjali Nuggehalli"
 ---
 
-## Using HPC to Run Scripts
 
 Follow these steps to set up the HPC Environment and then run commands in the terminal:
 
